@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Head of the Root -->
+<head> <!-- child sub root of the html tag as head tag  -->
+	<meta charset="UTF-8">
+    <title>Anonymous function</title>
+</head>
+<body>
+    <script>
+       
+  
+ var mainfunction=function(anotherfunction,value)
+       {
+          anotherfunction(value);
+       };
+
+       
+setTimeout(mainfunction(function(print)
+  {
+    console.log(print);
+  },"This is anonymous function."),5000);
+    </script>
+</body>
+</html>
